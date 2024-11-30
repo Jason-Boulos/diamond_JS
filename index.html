@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+<script>
+// Prompt the user to enter the number of rows
+const numberOfRows = parseInt(prompt("Please enter the number of rows: "));
+
+//  loop to print the upper half of the diamond
+for (let i = 0; i < numberOfRows; i++) {
+  let row = "";
+  
+  // Add spaces
+  for (let j = 0; j < numberOfRows - i - 1; j++) {
+    row += " ";
+  }
+  
+  // Add stars
+  for (let j = 0; j < (i * 2 + 1); j++) {
+    row += "*";
+  }
+  
+  console.log(row);
+}
+
+// loop to print the lower half of the diamond
+for (let i = numberOfRows - 2; i >= 0; i--) {
+  let row = "";
+  
+  // Add spaces
+  for (let j = 0; j < numberOfRows - i - 1; j++) {
+    row += " ";
+  }
+  
+  // Add stars
+  for (let j = 0; j < (i * 2 + 1); j++) {
+    row += "*";
+  }
+  
+  console.log(row);
+}
+
+</script>
+</body>
+</html>
